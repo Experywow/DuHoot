@@ -861,7 +861,7 @@ ul.filter-buttons li img {
   font-weight: 500;
   font-family: "Gotham";
   text-align: center;
-  z-index: 2;
+  z-index: -1;
 }
 
 .rate-active {
@@ -871,7 +871,7 @@ ul.filter-buttons li img {
   font-size: 18px;
   color: #ffffff;
   text-align: center;
-  z-index: 2;
+  z-index: -1;
 }
 
 .comments-top {
@@ -881,7 +881,7 @@ ul.filter-buttons li img {
   text-align: center;
   left: 60%;
   top: 60%;
-  z-index: 2;
+  z-index: -1;
 }
 
 .card5,
@@ -984,6 +984,15 @@ p.price {
 .card-top:hover .price {
   z-index: 0;
   visibility: hidden;
+}
+.card-top:hover .comments-top {
+  z-index: 2;
+}
+.card-top:hover .show-more-btn {
+  z-index: 2;
+}
+.rate-active .card-top:hover .rate-active {
+  z-index: 2;
 }
 
 .rate-overall,
