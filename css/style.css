@@ -786,6 +786,19 @@ ul.filter-buttons li img {
   padding-bottom: 15px;
 }
 
+.card5 .card-top {
+  background-image: url("../images/posts/card5/card5.svg");
+  background-size: cover;
+}
+.card6 .card-top {
+  background-image: url("../images/posts/card6/card6.svg");
+  background-size: cover;
+}
+.card11 .card-top {
+  background-image: url("../images/posts/card6/card6.svg");
+  background-size: cover;
+}
+
 .card-top img {
   position: relative;
   width: 100%;
@@ -831,6 +844,7 @@ ul.filter-buttons li img {
 
 .card-top {
   position: relative;
+  min-height: 196px;
 }
 
 .card-top .show-more-btn {
@@ -896,6 +910,7 @@ ul.filter-buttons li img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 128px;
 }
 
 .card1 h2,
