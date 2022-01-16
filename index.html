@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+    <link rel="stylesheet" href="css/nullstyle.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DuHoot</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-body row">
+                <a class="header-logo col-3 col-sm-3 col-md-4 col-lg-2" href="#">
+                    <img src="./images/navbar/logo.png" alt="logotype">
+                </a>
+                <button class="hamburger hamburger--spring col-1" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <nav class="header-menu col-6">
+                    <ul class="header-list" id="nav-panel">
+                        <li>
+                            <a class="header-link" aria-current="page" href="#">REALITY</a>
+                        </li>
+                        <li>
+                            <a class="header-link" href="#">LIVING</a>
+                        </li>
+                        <li>
+                            <a class="header-link" href="#">EDUCATATION</a>
+                        </li>
+                        <li>
+                            <a class="header-link" href="#">ENTERTAINMENT</a>
+                        </li>
+                        <li>
+                            <a class="header-link" href="#">MOBILITY</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="search-login col-7 col-sm-5 col-md-4 col-lg-3">
+                    <form class="nav-search">
+                        <input type="search" placeholder="Search here....">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                    <a href="#" class="nav-login"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Search Block-->
+    <section class="search-block">
+        <div class="container">
+            <h1>What are you looking for?</h1>
+            <form class="search-form" action="#" method="post">
+                <div class="row justify-content-center">
+                    <select class="search-form-select left col-3" aria-label="select your city">
+                        <option value="1">Dubai</option>
+                        <option value="2">Rio de Janeiro</option>
+                        <option value="3">Paris</option>
+                    </select>
+                    <select class="search-form-select right col-3" aria-label="choose target">
+                        <option value="1">Education</option>
+                        <option value="2">Work</option>
+                        <option value="3">Rest</option>
+                    </select>
+                    <div class="row justify-content-center">
+                        <input class="col-6" type="search" placeholder="Keyword, name, date, ...">
+                    </div>
+                    <div class="row justify-content-center">
+                        <button class="col-2" type="submit">SEARCH</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--Filter Block-->
+    <section class="filter-block">
+        <div class="container">
+            <div class="filters row">
+                <div class="google-map"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462560.3012030251!2d54.9475610883428!3d25.076381466775658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2z0JTRg9Cx0LDQuSAtINCe0LHRitC10LTQuNC90LXQvdC90YvQtSDQkNGA0LDQsdGB0LrQuNC1INCt0LzQuNGA0LDRgtGL!5e0!3m2!1sru!2sua!4v1635953905530!5m2!1sru!2sua"
+                        width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                <ul class="filter-links col-12 col-sm-6 col-md-6 col-lg-4">
+                    <li class="filter-item">
+                        <a class="filter-link" href="#">RECOMMENDED</a>
+                    </li>
+                    <li class="filter-item">
+                        <a class="filter-link" href="#">LATEST</a>
+                    </li>
+                    <li class="filter-item">
+                        <a class="filter-link" href="#">HIGHLIGHTS</a>
+                    </li>
+                </ul>
+                <form class="filter-block-form col-12 col-sm-6 col-md-6 col-lg-4" action="#" method="post">
+                    <select aria-label="select your city">
+                        <option value="1">DUBAI</option>
+                        <option value="2">RIO DE JANEIRO</option>
+                        <option value="3">PARIS</option>
+                    </select>
+                    <button class="map-button">SHOW MAP
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                        </svg>
+                    </button>
+                </form>
+                <div class="title-filter col-12 col-sm-4 col-md-5 col-lg-1">FILTER:</div>
+                <ul class="filter-buttons col-12 col-sm-8 col-md-7 col-lg-3">
+                    <li class="filter-button1">
+                        <img src="images/filter/house.png">
+                    </li>
+                    <li class="filter-button2">
+                        <img src="images/filter/person.png">
+                    </li>
+                    <li class="filter-button3">
+                        <img src="images/filter/graduation-cap.png">
+                    </li>
+                    <li class="filter-button4">
+                        <img src="images/filter/melody-note.png">
+                    </li>
+                    <li class="filter-button5">
+                        <img src="images/filter/bus.png">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="posts">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 box">
+                    <div class="card1">
+                        <div class="card-top">
+                            <img src="images/posts/card1/card1.svg" alt="">
+                            <button class="show-more-btn"><i class="fas fa-search"></i> SHOW MORE</button>
+                            <div class="rate-active"><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                            <div class="comments-top">
+                                <i class="far fa-comments"></i>
+                            </div>
+                            <p class="price">$2,990</p>
+                        </div>
+                        <div class="btn-hr">
+                            <hr>
+                            <button class="btn-house">
+                                <img src="images/posts/card1/house.png" alt="">
+                            </button>
+                        </div>
+                        <div class="card-info">
+                            <h2>2 bedroom house for rent in Dubai</h2>
+                            <p class="green">VISION AGENCY</p>
+                            <div class="rate-overall">
+                                <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"><i class="far fa-star"></i></i>
+                                </i>
+                                </i><span>&nbsp;(365)</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 box">
+                    <div class="card2">
+                        <div class="card-top">
+                            <img src="images/posts/card2/card2.svg" alt="">
+                            <button class="show-more-btn"><i class="fas fa-search"></i> SHOW MORE</button>
+                            <div class="rate-active"><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                            <div class="comments-top">
+                                <i class="far fa-comments"></i>
+                            </div>
+                        </div>
+                        <div class="btn-hr">
+                            <hr>
+                            <button class="btn-melody">
+                                <img src="images/posts/card2/melody-note.png" alt="">
+                            </button>
+                        </div>
+                        <div class="card-info">
+                            <h2>Beach party festival 2014</h2>
+                            <div class="rate-overall">
+                                <p class="orange">LONG BEACH</p>
+                                <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"><i class="fas fa-star"></i></i>
+                                </i>
+                                </i><span>&nbsp;(1165)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 box">
+                    <div class="card3">
+                        <div class="card-top">
+                            <img src="images/posts/card3/card3.svg" alt="">
+                            <button class="show-more-btn"><i class="fas fa-search"></i> SHOW MORE</button>
+                            <div class="rate-active"><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                            <div class="comments-top">
+                                <i class="far fa-comments"></i>
+                            </div>
+                        </div>
+                        <div class="btn-hr">
+                            <hr>
+                            <button class="btn-bus">
+                                <img src="images/posts/card3/bus.png" alt="">
+                            </button>
+                        </div>
+                        <div class="card-info">
+                            <h2>Aliquam quis pulvinar purus</h2>
+                            <div class="rate-overall">
+                                <p class="purple">BUS TRANS</p>
+                                <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"><i class="far fa-star"></i></i>
+                                </i>
+                                </i><span>&nbsp;(365)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 box">
+                    <div class="card4">
+                        <div class="card-top">
+                            <img src="images/posts/card4/card4.svg" alt="">
+                            <button class="show-more-btn"><i class="fas fa-search"></i> SHOW MORE</button>
+                            <div class="rate-active"><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                            <div class="comments-top">
+                                <i class="far fa-comments"></i>
+                            </div>
+                            <p class="price">$2,990</p>
+                        </div>
+                        <div class="btn-hr">
+                            <hr>
+                            <button class="btn-house">
+                                <img src="images/posts/card1/house.png" alt="">
+                            </button>
+                        </div>
+                        <div class="card-info">
+                            <h2>4 bedroom house for rent in Dubai</h2>
+                            <div class="rate-overall">
+                                <p class="green">REALITY AGENCY</p>
+                                <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"><i class="far fa-star"></i></i>
+                                </i>
+                                </i><span>&nbsp;(365)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 box">
+                    <div class="card5">
+                        <div class="card-top">
+                            <p class="card-title">VISION AGENCY</p>
+                            <div class="rate-overall">
+                                <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"><i class="far fa-star"></i></i>
+                                </i>
+                                </i><span>&nbsp;(365)</span>
+                            </div>
+                            <img src="images/posts/card5/card5.svg" alt="">
+                            <button class="show-more-btn"><i class="fas fa-search"></i> SHOW MORE</button>
+                            <div class="rate-active"><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                            <div class="comments-top">
+                                <i class="far fa-comments"></i>
+                            </div>
+                        </div>
+                        <div class="btn-hr">
+                            <hr>
+                            <button class="btn-house">
+                                <img src="images/posts/card1/house.png" alt="">
+                            </button>
+                        </div>
+                        <div class="user-commentary">
+                            <div class="user-avatar">
+                                <img src="images/posts/card5/user-avatar.png" alt="user-avatar">
+                            </div>
+                            <div class="commentary-info">
+                                <div class="rate-self">
+                                    <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="far fa-star"><i class="far fa-star"></i></i></i></i>
+                                </div>
+                                <p class="user-name">
+                                    LUCY-P
+                                </p>
+                                <p class="user-comment">
+                                    “Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis
+                                    posuere
+                                    orci
+                                    ornare. Duis mattis sagittis fringilla.” ...read more
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 box">
+                    <div class="card6">
+                        <div class="card-top">
+                            <p class="card-title">SKY BOX CLUB</p>
+                            <div class="rate-overall">
+                                <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"><i class="fas fa-star"></i></i>
+                                </i>
+                                </i><span>&nbsp;(1365)</span>
+                            </div>
+                            <img src="images/posts/card6/card6.svg" alt="">
+                            <button class="show-more-btn"><i class="fas fa-search"></i> SHOW MORE</button>
+                            <div class="rate-active"><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                            <div class="comments-top">
+                                <i class="far fa-comments"></i>
+                            </div>
+                        </div>
+                        <div class="btn-hr">
+                            <hr>
+                            <button class="btn-house">
+                                <img src="images/posts/card1/house.png" alt="">
+                            </button>
+                        </div>
+
+                        <div class="user-commentary">
+                            <div class="user-avatar">
+                                <img src="images/posts/card6/user-avatar.png" alt="user-avatar">
+                            </div>
+                            <div class="commentary-info">
+                                <div class="rate-self">
+                                    <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"><i class="fas fa-star"></i></i></i></i>
+                                </div>
+                                <p class="user-name">
+                                    PETER145
+                                </p>
+                                <p class="user-comment">
+                                    “Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis
+                                    posuere
+                                    orci
+                                    ornare. Duis mattis sagittis fringilla.” ...read more
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 box">
+                    <div class="card7">
+                        <div class="card-top">
+                            <img src="images/posts/card1/card1.svg" alt="">
+                            <button class="show-more-btn"><i class="fas fa-search"></i> SHOW MORE</button>
+                            <div class="rate-active"><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                            <div class="comments-top">
+                                <i class="far fa-comments"></i>
+                            </div>
+                            <p class="price">$2,990</p>
+                        </div>
+                        <div class="btn-hr">
+                            <hr>
+                            <button class="btn-house">
+                                <img src="images/posts/card1/house.png" alt="">
+                            </button>
+                        </div>
+                        <div class="card-info">
+                            <h2>2 bedroom house for rent in Dubai</h2>
+                            <p class="green">VISION AGENCY</p>
+                            <div class="rate-overall">
+                                <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"><i class="far fa-star"></i></i>
+                                </i>
+                                </i><span>&nbsp;(365)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 box">
+                    <div class="card8">
+                        <div class="card-top">
+                            <img src="images/posts/card2/card2.svg" alt="">
+                            <button class="show-more-btn"><i class="fas fa-search"></i> SHOW MORE</button>
+                            <div class="rate-active"><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                            <div class="comments-top">
+                                <i class="far fa-comments"></i>
+                            </div>
+                        </div>
+                        <div class="btn-hr">
+                            <hr>
+                            <button class="btn-melody">
+                                <img src="images/posts/card2/melody-note.png" alt="">
+                            </button>
+                        </div>
+                        <div class="card-info">
+                            <h2>Beach party festival 2014</h2>
+                            <div class="rate-overall">
+                                <p class="orange">LONG BEACH</p>
+                                <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"><i class="fas fa-star"></i></i>
+                                </i>
+                                </i><span>&nbsp;(1165)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 box">
+                    <div class="card9">
+                        <div class="card-top">
+                            <img src="images/posts/card3/card3.svg" alt="">
+                            <button class="show-more-btn"><i class="fas fa-search"></i> SHOW MORE</button>
+                            <div class="rate-active"><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                            <div class="comments-top">
+                                <i class="far fa-comments"></i>
+                            </div>
+                        </div>
+                        <div class="btn-hr">
+                            <hr>
+                            <button class="btn-bus">
+                                <img src="images/posts/card3/bus.png" alt="">
+                            </button>
+                        </div>
+                        <div class="card-info">
+                            <h2>Aliquam quis pulvinar purus</h2>
+                            <div class="rate-overall">
+                                <p class="purple">BUS TRANS</p>
+                                <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"><i class="far fa-star"></i></i>
+                                </i>
+                                </i><span>&nbsp;(365)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 box">
+                    <div class="card10">
+                        <div class="card-top">
+                            <img src="images/posts/card4/card4.svg" alt="">
+                            <button class="show-more-btn"><i class="fas fa-search"></i> SHOW MORE</button>
+                            <div class="rate-active"><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                            <div class="comments-top">
+                                <i class="far fa-comments"></i>
+                            </div>
+                            <p class="price">$2,990</p>
+                        </div>
+                        <div class="btn-hr">
+                            <hr>
+                            <button class="btn-house">
+                                <img src="images/posts/card1/house.png" alt="">
+                            </button>
+                        </div>
+                        <div class="card-info">
+                            <h2>4 bedroom house for rent in Dubai</h2>
+                            <div class="rate-overall">
+                                <p class="green">REALITY AGENCY</p>
+                                <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"><i class="far fa-star"></i></i>
+                                </i>
+                                </i><span>&nbsp;(365)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 box">
+                    <div class="card11">
+                        <div class="card-top">
+                            <p class="card-title">SKY BOX CLUB</p>
+                            <div class="rate-overall">
+                                <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"><i class="fas fa-star"></i></i>
+                                </i>
+                                </i><span>&nbsp;(1365)</span>
+                            </div>
+                            <img src="images/posts/card6/card6.svg" alt="">
+                            <button class="show-more-btn"><i class="fas fa-search"></i> SHOW MORE</button>
+                            <div class="rate-active"><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                            <div class="comments-top">
+                                <i class="far fa-comments"></i>
+                            </div>
+                        </div>
+                        <div class="btn-hr">
+                            <hr>
+                            <button class="btn-house">
+                                <img src="images/posts/card1/house.png" alt="">
+                            </button>
+                        </div>
+                        <div class="user-commentary">
+                            <div class="user-avatar">
+                                <img src="images/posts/card6/user-avatar.png" alt="user-avatar">
+                            </div>
+                            <div class="commentary-info">
+                                <div class="rate-self">
+                                    <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"><i class="fas fa-star"></i></i></i></i>
+                                </div>
+                                <p class="user-name">
+                                    PETER145
+                                </p>
+                                <p class="user-comment">
+                                    “Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis
+                                    posuere
+                                    orci
+                                    ornare. Duis mattis sagittis fringilla.” ...read more
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 box">
+                    <div class="card12">
+                        <div class="card-top">
+                            <img src="images/posts/card1/card1.svg" alt="">
+                            <button class="show-more-btn"><i class="fas fa-search"></i> SHOW MORE</button>
+                            <div class="rate-active"><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                            <div class="comments-top">
+                                <i class="far fa-comments"></i>
+                            </div>
+                            <p class="price">$2,990</p>
+                        </div>
+                        <div class="btn-hr">
+                            <hr>
+                            <button class="btn-house">
+                                <img src="images/posts/card1/house.png" alt="">
+                            </button>
+                        </div>
+                        <div class="card-info">
+                            <h2>2 bedroom house for rent in Dubai</h2>
+                            <p class="green">VISION AGENCY</p>
+                            <div class="rate-overall">
+                                <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"><i class="far fa-star"></i></i>
+                                </i>
+                                </i><span>&nbsp;(365)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 box">
+                    <div class="card13">
+                        <div class="card-top">
+                            <img src="images/posts/card2/card2.svg" alt="">
+                            <button class="show-more-btn"><i class="fas fa-search"></i> SHOW MORE</button>
+                            <div class="rate-active"><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                            <div class="comments-top">
+                                <i class="far fa-comments"></i>
+                            </div>
+                        </div>
+                        <div class="btn-hr">
+                            <hr>
+                            <button class="btn-melody">
+                                <img src="images/posts/card2/melody-note.png" alt="">
+                            </button>
+                        </div>
+                        <div class="card-info">
+                            <h2>Beach party festival 2014</h2>
+                            <div class="rate-overall">
+                                <p class="orange">LONG BEACH</p>
+                                <i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"><i class="fas fa-star"></i></i>
+                                </i>
+                                </i><span>&nbsp;(1165)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <a class="col-12 load-more-link" href="#">
+                    Load more
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </a>
+            </div>
+    </section>
+    <section class="offer">
+        <div class="container">
+            <div class="row h2 justify-content-center">
+                <h2 class="col-10 col-lg-6">
+                    What can DuHoot offer to you?
+                </h2>
+            </div>
+            <div class="row justify-content-center">
+                <p class="col-10 col-lg-6">Etiam cursus ipsum quis enim faucibus</p>
+            </div>
+            <div class="offer-inner">
+                <div class="row justify-content-center">
+                    <ul class="ul-offer col col-md-12 col-lg-10">
+                        <li class="offer-tab-link">
+                            <a href="#">
+                                <i class="fas fa-home"></i>
+                            </a>
+                        </li>
+                        <li class="offer-tab-link">
+                            <a href="#">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="offer-tab-link">
+                            <a href="#">
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                        </li>
+                        <li class="offer-tab-link">
+                            <a href="#">
+                                <i class="fab fa-itunes-note"></i>
+                            </a>
+                        </li>
+                        <li class="offer-tab-link">
+                            <a href="#">
+                                <i class="fas fa-bus-alt"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="offer-tabs-desktop">
+                    <div class="row justify-content-center">
+                        <h3 class="tab-title col-12 col-lg-2">Reality</h3>
+                    </div>
+                    <div class="offer-tab row">
+                        <div class="offer-tab-content col-12 col-lg-5 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-lightning-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z" />
+                            </svg>
+                            <p>
+                                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                Morbi
+                                gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus
+                                est. In
+                                hendrerit, massa at.
+                            </p>
+                        </div>
+                        <div class="offer-tab-content1 col-12 col-lg-5">
+                            <svg class="svg-icon" style="vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M731.428571 402.285714q0-14.848-10.825143-25.746286t-25.746286-10.825143q-98.304 0-181.686857 28.306286t-148.260571 76.580571-134.582857 125.44q-10.825143 11.995429-10.825143 25.746286 0 14.848 10.825143 25.746286t25.746286 10.825143q13.677714 0 25.746286-10.825143 15.433143-13.677714 42.276571-40.594286t38.253714-37.741714q78.262857-70.875429 153.453714-100.571429t179.126857-29.696q14.848 0 25.746286-10.825143t10.825143-25.746286zM1024 289.133714q0 54.272-11.410286 110.299429-26.258286 128-105.398857 218.843429t-204.288 153.161143q-122.294857 61.732571-250.294857 61.732571-84.553143 0-163.401143-26.843429-8.557714-2.852571-50.322286-23.990857t-54.857143-21.138286q-9.142857 0-22.601143 18.285714t-25.746286 40.009143-29.988571 40.009143-34.304 18.285714q-17.115429 0-29.110857-6.290286t-17.700571-13.677714-15.433143-23.990857q-1.170286-2.267429-3.437714-6.290286t-3.145143-5.705143-1.682286-5.412571-0.877714-7.68q0-19.968 17.700571-41.984t38.838857-37.449143 38.838857-32.036571 17.700571-27.428571q0-2.267429-7.972571-21.723429t-9.142857-25.161143q-5.12-29.110857-5.12-59.465143 0-65.682286 24.868571-125.732571t68.022857-105.398857 97.426286-79.433143 116.589714-54.564571q31.451429-10.313143 82.870857-14.555429t102.546286-5.12 102.034286-3.437714 93.403429-13.677714 64.877714-32.256l16.822857-16.822857t16.822857-16.018286 15.433143-11.410286 20.845714-9.142857 24.868571-2.56q22.308571 0 40.301714 26.258286t27.136 64 13.677714 70.875429 4.534857 54.857143z" />
+                            </svg>
+                            <p>
+                                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                Morbi
+                                gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus
+                                est. In
+                                hendrerit, massa at.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="row footer-title justify-content-center">
+                <h2>Subscribe to our newsletter</h2>
+            </div>
+            <div class="row justify-content-center">
+                <form class="subscribe-form col-12 col-sm-10 col-6" action="#">
+                    <input type="email" id="email" name="email" placeholder="your@email.com">
+                    <input type="submit" value="SUBSCRIBE">
+                </form>
+            </div>
+            <hr>
+            <div class="row">
+                <ul class="first-ul col-6 col-sm-4">
+                    <li class="li-title">
+                        Ipsum quis
+                    </li>
+                    <li>
+                        <a href="#">
+                            Aliquam quis
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Pulvinar purus
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Etiam cursus
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Ipsum quis
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Enim faucibus
+                        </a>
+                    </li>
+                </ul>
+                <ul class="second-ul col-6 col-sm-4">
+                    <li class="li-title">
+                        Ipsum quis
+                    </li>
+                    <li>
+                        <a href="#">
+                            Aliquam quis
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Pulvinar purus
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Etiam cursus
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Ipsum quis
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Enim faucibus
+                        </a>
+                    </li>
+                </ul>
+                <div class="col-12 col-sm-4">
+                    <ul class="third-ul">
+                        <li class="li-title">
+                            Follow us
+                        </li>
+                        <div class="social-media">
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                    <div class="copyright">Copyright © All Rights reserved</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="mobile-menu">
+        <ul class="mobile-menu-list" id="mobile-menu-panel">
+            <li>
+                <a class="mobile-menu-link" aria-current="page" href="#">REALITY</a>
+            </li>
+            <li>
+                <a class="mobile-menu-link" href="#">LIVING</a>
+            </li>
+            <li>
+                <a class="mobile-menu-link" href="#">EDUCATATION</a>
+            </li>
+            <li>
+                <a class="mobile-menu-link" href="#">ENTERTAINMENT</a>
+            </li>
+            <li>
+                <a class="mobile-menu-link" href="#">MOBILITY</a>
+            </li>
+        </ul>
+    </div>
+    <script src="js/libs/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>
